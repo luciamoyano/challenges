@@ -1,0 +1,385 @@
+/* Body */
+
+* {
+    box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ -webkit-transition: all 0.4s ease-out;
+ -moz-transition: all 0.4s ease-out;
+ -ms-transition: all 0.4s ease-out;
+ -o-transition: all 0.4s ease-out;
+ transition: all 0.4s ease-out;
+}
+
+button {
+  background:transparent;
+  border:none;
+}
+
+button:active,
+button:hover,
+button:focus,
+input:active,
+input:focus,
+input:active {
+  outline:none;
+  border:none;
+  color: #515151;
+}
+
+body {
+  background: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: .8em;
+  color: #444;
+  height: 100%;
+}
+
+h1 {
+  font-size:1.5em;
+  font-weight: 400;
+}
+
+#wrapper {
+  padding:10px;
+  position: relative;
+  height: 100%;
+}
+
+/* Avisos */
+#wrapper .aviso {
+  display: flex;
+  margin: 50px auto;
+  width:100%;
+  max-width:875px;
+  background:#fff;
+  padding:0;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+} 
+
+#wrapper .aviso,
+.form-contacto {
+  background:#fff;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+}
+
+#wrapper .aviso .image-slider {
+  width: 100%;
+  position: relative;
+}
+
+.aviso .aviso-info {
+  width:auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.aviso .aviso-info .aviso-principal {
+  padding: 20px 20px 0 20px;
+}
+
+.aviso .aviso-info .aviso-precio {
+  padding: 20px;
+}
+
+.aviso .aviso-info h1.aviso-titulo {
+  color: #7abce3;
+  margin: 0 auto 10px 0;
+}
+
+.aviso .aviso-detalles {
+  position:relative;
+}
+
+#wrapper .aviso .aviso-info p {
+  margin:0;
+  padding:0;
+}
+
+#wrapper .aviso .aviso-info p.aviso-direccion {
+  color: #717171;
+  font-size: 0.95em;
+}
+
+#wrapper .aviso .aviso-info p.aviso-descripcion {
+  margin: 15px auto 0 auto;
+  line-height: 1.4;
+}
+
+#wrapper .aviso .aviso-info .aviso-detalles {
+  width:100%;
+}
+
+#wrapper .aviso .aviso-info .aviso-detalles .aviso-precio {
+  display:inline-block;
+}
+
+#wrapper .aviso .aviso-info .aviso-detalles .aviso-especificaciones {
+  background: #eee;
+  margin-top:auto;
+  width:100%;
+  height:50px;
+  padding: 16px;
+  font-weight: 600;
+}
+
+#wrapper .aviso .aviso-info .aviso-detalles .aviso-especificaciones p {
+  display:inline-block;
+  margin-right: 8px;
+  color: #444;
+  font-size: 0.9em;
+}
+
+#wrapper .aviso .aviso-info .precio-total form {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+#wrapper .aviso .aviso-info .precio-metro {
+  font-size: .9em;
+  color: #7abce3;
+  font-weight: 600;
+  font-style: italic;
+  display:inline-block;
+}
+
+#wrapper .aviso .aviso-info .precio-metro-numero {
+  font-size: 1.2em;
+  margin-left: 5px;
+}
+
+/* Precio formulario */
+#wrapper .aviso .aviso-info #form {
+  display:inline-block;
+  font-size: 1.7em;
+  font-weight: 600;
+  margin: 0;
+}
+
+#wrapper .aviso .aviso-info #form input#priceInput {
+  border:none;
+  font-size: 1.1em;
+  font-weight: 600;
+  max-width: 150px;
+  background:transparent;
+  color: #444;
+}
+
+
+/* No arrows */
+input#priceInput::-webkit-outer-spin-button,
+input#priceInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input#priceInput[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*Contactar*/
+#wrapper .aviso .aviso-info button.boton-contacto {
+    position:absolute;
+    bottom:15px;
+    right:15px;
+}
+
+#wrapper .form-contacto #form-contacto button,
+#wrapper .aviso .aviso-info button.boton-contacto {
+    font-family: 'Roboto', sans-serif;
+    text-transform:uppercase;
+    background:transparent;
+    border:none;
+    color: #5cafe0;
+    letter-spacing:0.02em;
+    font-size:1em;
+    cursor:pointer;
+    font-weight: 500;
+}
+
+#wrapper .form-contacto #form-contacto button {
+  display:block;
+  float:right;
+}
+
+
+#wrapper .aviso .aviso-info button.boton-contacto:focus,
+#wrapper .aviso .aviso-info button.boton-contacto:active,
+#wrapper .aviso .aviso-info button.boton-contacto:hover,
+#wrapper .form-contacto #form-contacto button:focus,
+#wrapper .form-contacto #form-contacto button:active,
+#wrapper .form-contacto #form-contacto button:hover
+ {
+  border:none;
+  outline:none;
+  color: #515151;
+}
+
+
+/* Sliders */
+.slide {
+  display: none;
+  width:100%;
+  overflow:hidden;
+}
+
+.slide img {
+  height: 100%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  color:black;
+}
+
+/*Like*/
+.like-container {
+  position:absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.like {
+  font-size:1.5em;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.aviso-destacado {
+  position:absolute;
+  left: 0;
+  top: 20px;
+  padding:5px 10px;
+  background: #9370e0;
+  height:25px;
+  color:#fff;
+}
+
+/* Formulario contacto */
+.form-contacto {
+  width: 80%;
+  padding: 20px;
+  max-width: 500px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  display:none;
+  opacity:0;
+}
+
+.form-contacto form input#emailInput {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: #7abce3;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-contacto p {
+    font-weight: 500;
+    color: #7abce3;
+}
+
+.form-contacto form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-contacto.contacto-abierto {
+  display:block;
+  opacity:1;
+}
+
+p#resultado-email {
+    margin-top: 0;
+}
+
+/* media queries */
+
+@media (max-width:734px) {
+  #wrapper .aviso {
+    display: block;
+    width:100%;
+    min-width: 320px;
+    max-width: 414px;
+  }
+  #wrapper .aviso .image-slider {
+    width:100%;
+    position: relative;
+  }
+
+  .slide {
+    width:100%;
+    max-height:400px;
+  }
+
+  .slide img {
+    height:auto;
+    width:100%;
+  }
+
+  #wrapper .aviso .aviso-info .aviso-detalles {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    position: absolute;
+    height: 70px;
+    top: -70px;
+    color:#fff;
+  }
+
+  #wrapper .aviso .aviso-info .aviso-precio {
+    padding: 0 20px;
+  }
+
+  #wrapper .aviso .aviso-info p.precio-metro {
+    display:none;
+  }
+
+  #wrapper .aviso .aviso-info form input#priceInput {
+    color:#fff;
+  }
+
+  #wrapper .aviso .aviso-info .aviso-detalles .aviso-especificaciones {
+    background:transparent;
+    padding: 5px 20px 20px 20px;
+    height: auto;
+    color: #fff;
+  }
+
+  #wrapper .aviso .aviso-info .aviso-detalles .aviso-especificaciones p {
+    color: #fff;
+  }
+
+  #wrapper .aviso .aviso-info button.boton-contacto {
+    position:relative;
+    align-self:flex-end;
+  }
+
+  #wrapper .aviso .aviso-info p.aviso-descripcion {
+    margin: 15px auto
+  }
+}

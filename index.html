@@ -1,0 +1,73 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,500&display=swap" rel="stylesheet">
+    <link href="fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+
+</head>
+<body onload="setPrice()">
+    <div id="wrapper">
+        <div class="aviso">
+            
+            <div class="image-slider">
+                <div class="like-container"><i class="fas fa-heart like" onclick="activeHeart()"></i></div>
+                <div class="aviso-destacado">Super destacado</div>
+
+                <div class="slide">
+                    <img src="images/slider1.jpg">
+                </div>
+              
+                <div class="slide">
+                  <img src="images/slider2.jpg">
+                </div>
+              
+                <div class="slide">
+                  <img src="images/slider3.jpg">
+                </div>
+              
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="aviso-info">
+                
+                <div class="aviso-principal">
+                    <h1 class="aviso-titulo">Etiam id purus sit amet elit accumsan tincidunt. </h1>
+                    <p class="aviso-direccion"><i class="fas fa-map-marker-alt"></i> Juan Francisco Segui, Palermo Chico, Palermo</p>
+                    <p class="aviso-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et nunc urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam consectetur hendrerit mi eu auctor. Etiam id purus sit amet elit accumsan tincidunt. Integer auctor blandit nulla, dignissim vulputate lectus feugiat non.</p>
+                </div>
+                <div class="aviso-detalles">
+                    <div class="aviso-precio">
+                        <p class="precio-total">
+                            <form id="form" onsubmit="return false;">
+                                U$S <input type="number" id="priceInput" value="1400000" maxlength="12" />
+                                <button type="submit" onclick="setPrice()" style="visibility: hidden;"></button>
+                            </form>
+                            <p class="precio-metro">$/m<sup>2</sup><span class="precio-metro-numero"></span></p>
+                        </p>
+                    </div>
+                    <div class="aviso-especificaciones">
+                        <p class="detalles-metros">380m<sup>2</sup></p>
+                        <p class="detalles-dormitorios">3 Dormitorios</p>
+                        <p class="detalles-banos">2 Baños</p>
+                        <p class="detalles-cochera">2 Cocheras</p>
+                    </div>
+                </div>
+                <button class="boton-contacto" onclick="abrirContacto()">contactar</button>
+            </div>
+        </div>
+        <div class="form-contacto">
+            <p>Para ser contactado por favor ingrese su dirección de correo electónico</p>
+            <form id="form-contacto" onsubmit="return false;">
+                <label for="emailInput">Email</label>
+                <input type="email" id="emailInput" value="" />
+                <p id="resultado-email"></p>
+                <button type="submit" onclick="validateEmail()">Enviar</button>
+            </form>
+            
+        </div>
+    </div>
+    <script src="functions.js"></script>
+</body>
+</html>
